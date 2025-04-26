@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a2dff7, #e0f7fa); /* Gradient of baby blue shades */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Dark text color for contrast */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* Bright baby blue for headings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    color: #0056b3; /* Darker baby blue for subheadings */
+    border-bottom: 2px solid #0056b3; /* Matching border color */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.cipher-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.8); /* Light background for sections */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cipher-section:hover {
+    background-color: rgba(240, 248, 255, 1); /* Solid light background on hover */
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #007bff; /* Baby blue border */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff; /* White input background */
+    color: #333; /* Dark text for readability */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bright baby blue for buttons */
+    color: #fff; /* White text for contrast */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333; /* Dark text color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+}

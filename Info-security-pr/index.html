@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CipherVerse</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CipherVerse</h1>
+
+        <div class="cipher-section">
+            <h2>Caesar Cipher</h2>
+            <input type="text" id="caesarInput" placeholder="Enter text">
+            <input type="number" id="caesarShift" placeholder="Shift" min="0" max="25">
+            <button onclick="caesarEncrypt()">Encrypt</button>
+            <button onclick="caesarDecrypt()">Decrypt</button>
+            <p id="caesarResult"></p>
+        </div>
+
+        <div class="cipher-section">
+            <h2>Playfair Cipher</h2>
+            <input type="text" id="playfairInput" placeholder="Enter text">
+            <input type="text" id="playfairKey" placeholder="Enter key">
+            <button onclick="playfairEncrypt()">Encrypt</button>
+            <button onclick="playfairDecrypt()">Decrypt</button>
+            <p id="playfairResult"></p>
+        </div>
+        <div class="cipher-section">
+            <h2>Feistel Cipher</h2>
+            <input type="text" id="feistelInput" placeholder="Enter binary (e.g., 10101010)">
+            <input type="text" id="feistelKeys" placeholder="Enter keys (comma-separated)">
+            <button onclick="feistelEncrypt()">Encrypt</button>
+            <button onclick="feistelDecrypt()">Decrypt</button>
+            <p id="feistelResult"></p>
+        </div>
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
